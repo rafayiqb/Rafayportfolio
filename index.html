@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafay Iqbal – Creative Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background-color: rgba(15, 32, 39, 0.8);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid #334955;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #00ffff;
+      animation: pulseName 2s infinite;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      transition: color 0.3s ease-in-out;
+    }
+    nav a:hover {
+      color: #00ffff;
+    }
+    section {
+      padding: 7rem 2rem 4rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease;
+    }
+    h2 {
+      font-size: 3rem;
+      color: #00ffff;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    p {
+      color: #d1d5db;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .projects, .skills, .jobs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card, .skill-card, .job-card {
+      background: #1e2a38;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      border: 1px solid #00ffff22;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover, .skill-card:hover, .job-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffff80;
+    }
+    .project-card a {
+      text-decoration: none;
+      color: #e0e0e0;
+      display: block;
+    }
+    .skill-card {
+      animation: bounceIn 1s ease;
+    }
+    .job-card a {
+      display: block;
+    }
+    .job-card img {
+      margin-top: 1rem;
+      max-width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 0 15px #00ffff44;
+      transition: transform 0.3s ease;
+    }
+    .job-card img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      padding: 2rem 0;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    @keyframes pulseName {
+      0%, 100% { text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; }
+      50% { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><strong>Rafay Iqbal</strong></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#jobs">Job Sims</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section style="padding-top: 9rem;">
+    <h2>Hello, I'm Rafay 👋</h2>
+    <p>A passionate technophile crafting beautiful, functional digital experiences.</p>
+    <p>6th Semester IT Student @ QAU | MERN Stack Developer | Animation Enthusiast | Creative Developer</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm currently pursuing a degree in Information Technology from Quaid-e-Azam University. With a passion for automation, design, and development, I’ve built various real-world projects and completed job simulations with HP, EA, and Pepsi. Always ready to solve problems and create magic with code.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-card">HTML & CSS</div>
+      <div class="skill-card">React JS</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">Express.js</div>
+      <div class="skill-card">Office</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <a href="https://github.com/rafayiqb" target="_blank">
+          <h3>Ecommerce Store</h3>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/rafayiqb" target="_blank">
+          <h3>Python Automated Result Card Generator</h3>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/rafayiqb" target="_blank">
+          <h3>DSA Parking Lot Management</h3>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/rafayiqb" target="_blank">
+          <h3>Python YT Downloader</h3>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/rafayiqb" target="_blank">
+          <h3>OOP Hospital Management</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="jobs">
+    <h2>Job Simulations</h2>
+    <div class="jobs">
+      <div class="job-card">
+        <h3>HP Software Engineering</h3>
+        <a href="assets/hp.jpg" target="_blank">
+          <img src="assets/hp.jpg" alt="HP Certificate">
+        </a>
+      </div>
+      <div class="job-card">
+        <h3>EA Software Engineering</h3>
+        <a href="assets/ea.jpg" target="_blank">
+          <img src="assets/ea.jpg" alt="EA Certificate">
+        </a>
+      </div>
+      <div class="job-card">
+        <h3>Pepsi Advanced Software Engineering</h3>
+        <a href="assets/pepsi.jpg" target="_blank">
+          <img src="assets/pepsi.jpg" alt="Pepsi Certificate">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s create something incredible together. Feel free to reach out via email or phone.</p>
+    <p><strong>Email:</strong> rafayiqb@gmail.com</p>
+    <p><strong>Phone:</strong> 0332 0515161</p>
+    <p><strong>University:</strong> Quaid-e-Azam University</p>
+    <p><strong>Field:</strong> Information Technology, 6th Semester</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Rafay Iqbal. All rights reserved.
+  </footer>
+</body>
+</html>
